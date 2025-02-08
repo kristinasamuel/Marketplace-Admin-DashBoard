@@ -16,7 +16,7 @@ interface Order {
   cartItems: { title: string; productImage: string }[];
 }
 
-const orderedPage = () => {
+const OrderedPage = () => {
   const [orders, setOrders] = useState<Order[]>([]);
   const [selectedOrderId, setSelectedOrderId] = useState<string | null>(null);
   const [statusFilter, setStatusFilter] = useState<string>("all");
@@ -196,4 +196,4 @@ const orderedPage = () => {
   );
 };
 
-export default orderedPage;
+export default OrderedPage;
